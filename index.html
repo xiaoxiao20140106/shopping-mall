@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>移动商城</title>
+	<meta name="applicable-device" content="mobile" />
+	<!-- 移动端 浏览器中页面将以原始大小显示，不允许缩放 -->
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+
+	<!-- iphone会把一串数字识别为电话号码，点击的时候会提示是否呼叫，屏蔽这功能则把telephone设置为no -->
+	<meta content="telephone=no" name="format-detection"/> 
+	<!-- iphone的私有标签，默认值为default（白色），可以定为black（黑色）和black-translucent（灰色半透明） -->
+	<meta content="black" name="apple-mobile-web-app-status-bar-style">
+	<!-- iphone设备的是有标签 允许全屏模式浏览，隐藏浏览器导航栏 -->
+	<meta content="yes" name="apple-mobile-web-app-capable"/>
+	<!-- 全屏显示 
+	<meta content="yes" name="apple-touch-fullscreen"/>
+	<!-- UC强制全屏 
+	<meta name="full-screen" content="yes">
+	<!-- QQ强制全屏 
+	<meta name="x5-fullscreen" content="true">
+	<!-- 屏蔽百度转码 -->
+	<meta http-equiv="Cache-Control" content="no-transform" />
+	<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/index.css">
+
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+	<script type="text/javascript" src="js/swiper.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	
+</head>
+<body>
+	<header>
+		<div class="main">
+		<div class="left" id="pullDown">
+				<span id="pull-down-span">南京</span>
+				<img src="images/title-03.png">
+				<ul id="pull-select">
+					<li>常州</li>
+					<li>扬州</li>
+					<li>泰州</li>
+					<li>南通</li>
+					<li>苏州</li>
+				 
+				</ul>
+		</div>
+		<div class="center">
+			<input type="text" placeholder="请输入商品名、品类、或商圈....">
+		</div>
+		<div class="right"></div>
+		</div>
+	</header>
+	<div class="swiper-container swiper-banner">
+        	<div class="swiper-wrapper">
+            	<div class="swiper-slide">
+					<img src="images/00.jpg" alt="">
+            	</div>
+            	<div class="swiper-slide">
+            		<img src="images/22.jpg" alt="">
+           		</div>
+           	 	<div class="swiper-slide">
+					<img src="images/33.jpg" alt="">
+            	</div>
+            	<div class="swiper-slide">
+					<img src="images/44.jpg" alt="">
+            	</div>
+            
+        	</div>
+     <div class="swiper-pagination swiper-pagination-banner"></div>
+    </div>
+	<article>
+		<div class="guide">
+			<ul class="g_list1">
+				<li>
+					<a href="">
+						<span class="food"></span>美食
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<span class="hotel"></span>酒店
+					</a>
+				</li>
+				<li><a href=""><span class="spot"></span>景点
+				</a></li>
+				<li><a href=""><span class="play"></span>休闲娱乐
+				</a></li>
+			</ul>
+			<ul class="g_list2">
+				<li><a href=""><span class="shop"></span>闪惠团购</a></li>
+				<li><a href=""><span class="film"></span>电影</a></li>
+				<li><a href=""><span class="meal"></span>度假套餐</a></li>				
+				<li><a href=""><span class="buy"></span>购物</a></li>
+				
+			</ul>
+
+		</div>
+		<div class="free">
+			<div class="f_pilot">
+				<span>免费体验区</span>
+				<span>
+				<span class="f_distance">距离开始</span>
+				<span  class="f_time">|</span>
+				<span id="lastDate"></span>
+				</span>
+				<a href="">查看更多></a>
+			</div>
+			<ul class="f_list1">
+				<li><a href=""><span class="ice"></span>冰激凌
+				</a></li>
+				<li><a href=""><span class="drink"></span>果蔬饮料
+				</a></li>
+				<li><a href=""><span class="fruit"></span>水果拼盘
+				</a></li>
+				<li><a href=""><span class="pizza"></span>美味披萨
+				</a></li>
+			</ul>
+			<ul class="f_list2">
+				<li><a href=""><span class="wash"></span>洗车擦车</a></li>
+				<li><a href=""><span class="photo"></span>摄影写真</a></li>
+				<li><a href=""><span class="billiards"></span>台球休闲</a></li>				
+				<li><a href=""><span class="bath"></span>足浴养生</a></li>
+			</ul>
+		</div>
+		<div class="wealth">
+			<div class="f_pilot">
+				<span>玫邦尼创富</span>
+				<span>邦尼币购物，超值超划算</span>
+				<a href="">查看全部></a>
+			</div>
+			<div class="w">
+				<ul class="w_list1">
+				<li>
+				<a href="">
+				<span class="b_title">养生</span>
+				<span class="s_title">强身保健</span>
+				<span id="body" class="spa"></span></a></li>
+				<li>
+				<a href="">
+				<span class="b_title">美食</span>
+				<span class="s_title">舌尖美味</span>
+				<span id="eat" class="spa"></span>
+				</a></li>
+				<li><a href="">
+				<span class="b_title">娱乐</span>
+				<span class="s_title">嗨翻全场</span>
+				<span id="happy" class="spa"></span>
+				</a></li>
+				<li><a href="">
+				<span class="b_title">丽人</span>
+				<span class="s_title">华丽蜕变</span>
+				<span id="bea" class="spa"></span>
+				</a></li>
+			</ul>
+			<ul class="w_list1">
+				<li><a href="">
+				<span class="b_title">电影</span>
+				<span class="s_title">身临其境</span>
+				<span id="movie" class="spa"></span></a></li>
+
+				<li><a href="">
+				<span class="b_title">写真</span>
+				<span class="s_title">定格美丽</span>
+				<span id="take" class="spa"></span></a></li>
+
+				<li><a href="">
+				<span class="b_title">住宿</span>
+				<span class="s_title">身心放松</span>
+				<span id="sleep" class="spa"></span></a></li>	
+
+				<li><a href="">
+				<span class="b_title">培训</span>
+				<span class="s_title">技能提升</span>
+				<span id="class" class="spa"></span>
+				</a></li>
+				
+			</ul>
+			</div>
+			
+		</div>
+		<div class="like">
+				<div class="l_pilot">
+					<span>猜你喜欢</span>
+					<a href="">查看所有></a>
+				</div>
+
+				<div class="l_all">
+					<div class="l_img1"><a href=""><img src="images/4-01.png" alt=""></a>
+					</div>
+					<div class="l_cake">
+						<p><a href="" class="l_1">香贝贝蛋糕／蛋挞</a>
+						<a href="" class="l_2">>1Km</a></p>
+						<p><a href="" class="l_3">高皇寨花都莲郡小区门向西30米</a></p>
+						<p><a href="" class="l_4">¥<span class="l_5">49.0元</span></a>
+						<a href="" class="l_6">月销量：1532份</a>
+						</p>
+					</div>
+				</div>
+					<div class="l_all">
+					<div class="l_img1"><a href=""><img src="images/4-02.png" alt=""></a>
+					</div>
+					<div class="l_cake">
+						<p><a href="" class="l_1">天天见面麻辣香锅</a>
+						<a href="" class="l_2">>1Km</a></p>
+						<p><a href="" class="l_3">高皇寨花都莲郡小区门向东30米</a></p>
+						<p><a href="" class="l_4">¥<span class="l_5">49.0元</span></a>
+						<a href="" class="l_6">月销量：1352份</a>
+						</p>
+					</div>
+				</div>
+				<div class="l_all">
+					<div class="l_img1"><a href=""><img src="images/4-03.png" alt=""></a>
+					</div>
+					<div class="l_cake">
+						<p><a href="" class="l_1">重庆小面</a>
+						<a href="" class="l_2">>1Km</a></p>
+						<p><a href="" class="l_3">高皇寨花都莲郡小区门向北30米</a></p>
+						<p><a href="" class="l_4">¥<span class="l_5">6.0元</span></a>
+						<a href="" class="l_6">月销量：1202份</a>
+						</p>
+					</div>
+					
+				</div>
+
+					<div class="hide">
+					<div class="l_img1"><a href=""><img src="images/4-02.png" alt=""></a>
+					</div>
+					<div class="l_cake">
+						<p><a href="" class="l_1">天天见面麻辣香锅</a>
+						<a href="" class="l_2">>1Km</a></p>
+						<p><a href="" class="l_3">高皇寨花都莲郡小区门向东30米</a></p>
+						<p><a href="" class="l_4">¥<span class="l_5">49.0元</span></a>
+						<a href="" class="l_6">月销量：1352份</a>
+						</p>
+					</div>
+				</div>
+				<div class="hide">
+					<div class="l_img1"><a href=""><img src="images/4-03.png" alt=""></a>
+					</div>
+					<div class="l_cake">
+						<p><a href="" class="l_1">重庆小面</a>
+						<a href="" class="l_2">>1Km</a></p>
+						<p><a href="" class="l_3">高皇寨花都莲郡小区门向北30米</a></p>
+						<p><a href="" class="l_4">¥<span class="l_5">6.0元</span></a>
+						<a href="" class="l_6">月销量：1202份</a>
+						</p>
+					</div>
+					
+				</div>
+
+
+
+				<div class="see">
+					查看全部团购
+				</div>		
+		</div>
+	</article>
+	<footer>
+		<div class="buttom">
+			<ul class="b_list">
+				<li>
+					<a href="">
+						<span class="first"></span>
+						商城首页
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<span class="cooperate">
+						</span>商家合作
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<span class="order">
+						</span>
+						订单列表
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<span class="member">
+						</span>
+						会员中心
+					</a>
+				</li>
+				
+			</ul>
+		</div>
+	</footer>
+</body>
+</html>
